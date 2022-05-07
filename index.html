@@ -10,12 +10,16 @@
 <body>
     <div class="main-game">
         <div class="genius">
-            <div class="blue"></div>
-            <div class="yellow"></div>
-            <div class="red"></div>
-            <div class="green"></div>
+            <div class="blue" onclick="game.click(2)"></div>
+            <div class="yellow"  onclick="game.click(3)"></div>
+            <div class="red"  onclick="game.click(1)"></div>
+            <div class="green"  onclick="game.click(0)"></div>
         </div>
     </div>
- <script src="js/script.js"></script>   
+ <script src="js/script.js"></script>
+ <script>
+    const game = new Game();
+    game.playGame();
+ </script>   
 </body>
 </html>
